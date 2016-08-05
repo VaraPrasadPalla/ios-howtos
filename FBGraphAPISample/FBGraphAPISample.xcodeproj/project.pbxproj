@@ -1,472 +1,1198 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		ED122BD3181057BD00A70384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD2181057BD00A70384 /* Foundation.framework */; };
-		ED122BD5181057BD00A70384 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD4181057BD00A70384 /* CoreGraphics.framework */; };
-		ED122BD7181057BD00A70384 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD6181057BD00A70384 /* UIKit.framework */; };
-		ED122BDD181057BD00A70384 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED122BDB181057BD00A70384 /* InfoPlist.strings */; };
-		ED122BDF181057BD00A70384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED122BDE181057BD00A70384 /* main.m */; };
-		ED122BE3181057BD00A70384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED122BE2181057BD00A70384 /* AppDelegate.m */; };
-		ED122BE5181057BD00A70384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED122BE4181057BD00A70384 /* Images.xcassets */; };
-		ED122BEC181057BD00A70384 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BEB181057BD00A70384 /* XCTest.framework */; };
-		ED122BED181057BD00A70384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD2181057BD00A70384 /* Foundation.framework */; };
-		ED122BEE181057BD00A70384 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD6181057BD00A70384 /* UIKit.framework */; };
-		ED122BF6181057BD00A70384 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED122BF4181057BD00A70384 /* InfoPlist.strings */; };
-		ED122BF8181057BD00A70384 /* FBGraphAPISampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED122BF7181057BD00A70384 /* FBGraphAPISampleTests.m */; };
-		ED122C041810589E00A70384 /* GraphAPICallsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED122C021810589E00A70384 /* GraphAPICallsViewController.m */; };
-		ED122C051810589E00A70384 /* GraphAPICallsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED122C031810589E00A70384 /* GraphAPICallsViewController.xib */; };
-		ED122C0718105C0B00A70384 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122C0618105C0B00A70384 /* FacebookSDK.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ED122BEF181057BD00A70384 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED122BC7181057BC00A70384 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED122BCE181057BC00A70384;
-			remoteInfo = FBGraphAPISample;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		ED122BCF181057BC00A70384 /* FBGraphAPISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBGraphAPISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED122BD2181057BD00A70384 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		ED122BD4181057BD00A70384 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		ED122BD6181057BD00A70384 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		ED122BDA181057BD00A70384 /* FBGraphAPISample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBGraphAPISample-Info.plist"; sourceTree = "<group>"; };
-		ED122BDC181057BD00A70384 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ED122BDE181057BD00A70384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ED122BE0181057BD00A70384 /* FBGraphAPISample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBGraphAPISample-Prefix.pch"; sourceTree = "<group>"; };
-		ED122BE1181057BD00A70384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ED122BE2181057BD00A70384 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED122BE4181057BD00A70384 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		ED122BEA181057BD00A70384 /* FBGraphAPISampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBGraphAPISampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED122BEB181057BD00A70384 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		ED122BF3181057BD00A70384 /* FBGraphAPISampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBGraphAPISampleTests-Info.plist"; sourceTree = "<group>"; };
-		ED122BF5181057BD00A70384 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ED122BF7181057BD00A70384 /* FBGraphAPISampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBGraphAPISampleTests.m; sourceTree = "<group>"; };
-		ED122C011810589E00A70384 /* GraphAPICallsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphAPICallsViewController.h; sourceTree = "<group>"; };
-		ED122C021810589E00A70384 /* GraphAPICallsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphAPICallsViewController.m; sourceTree = "<group>"; };
-		ED122C031810589E00A70384 /* GraphAPICallsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphAPICallsViewController.xib; sourceTree = "<group>"; };
-		ED122C0618105C0B00A70384 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK.framework; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		ED122BCC181057BC00A70384 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED122BD5181057BD00A70384 /* CoreGraphics.framework in Frameworks */,
-				ED122C0718105C0B00A70384 /* FacebookSDK.framework in Frameworks */,
-				ED122BD7181057BD00A70384 /* UIKit.framework in Frameworks */,
-				ED122BD3181057BD00A70384 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED122BE7181057BD00A70384 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED122BEC181057BD00A70384 /* XCTest.framework in Frameworks */,
-				ED122BEE181057BD00A70384 /* UIKit.framework in Frameworks */,
-				ED122BED181057BD00A70384 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		ED122BC6181057BC00A70384 = {
-			isa = PBXGroup;
-			children = (
-				ED122BD8181057BD00A70384 /* FBGraphAPISample */,
-				ED122BF1181057BD00A70384 /* FBGraphAPISampleTests */,
-				ED122BD1181057BC00A70384 /* Frameworks */,
-				ED122BD0181057BC00A70384 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		ED122BD0181057BC00A70384 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ED122BCF181057BC00A70384 /* FBGraphAPISample.app */,
-				ED122BEA181057BD00A70384 /* FBGraphAPISampleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ED122BD1181057BC00A70384 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ED122C0618105C0B00A70384 /* FacebookSDK.framework */,
-				ED122BD2181057BD00A70384 /* Foundation.framework */,
-				ED122BD4181057BD00A70384 /* CoreGraphics.framework */,
-				ED122BD6181057BD00A70384 /* UIKit.framework */,
-				ED122BEB181057BD00A70384 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ED122BD8181057BD00A70384 /* FBGraphAPISample */ = {
-			isa = PBXGroup;
-			children = (
-				ED122BE1181057BD00A70384 /* AppDelegate.h */,
-				ED122BE2181057BD00A70384 /* AppDelegate.m */,
-				ED122C011810589E00A70384 /* GraphAPICallsViewController.h */,
-				ED122C021810589E00A70384 /* GraphAPICallsViewController.m */,
-				ED122C031810589E00A70384 /* GraphAPICallsViewController.xib */,
-				ED122BE4181057BD00A70384 /* Images.xcassets */,
-				ED122BD9181057BD00A70384 /* Supporting Files */,
-			);
-			path = FBGraphAPISample;
-			sourceTree = "<group>";
-		};
-		ED122BD9181057BD00A70384 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ED122BDA181057BD00A70384 /* FBGraphAPISample-Info.plist */,
-				ED122BDB181057BD00A70384 /* InfoPlist.strings */,
-				ED122BDE181057BD00A70384 /* main.m */,
-				ED122BE0181057BD00A70384 /* FBGraphAPISample-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		ED122BF1181057BD00A70384 /* FBGraphAPISampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				ED122BF7181057BD00A70384 /* FBGraphAPISampleTests.m */,
-				ED122BF2181057BD00A70384 /* Supporting Files */,
-			);
-			path = FBGraphAPISampleTests;
-			sourceTree = "<group>";
-		};
-		ED122BF2181057BD00A70384 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ED122BF3181057BD00A70384 /* FBGraphAPISampleTests-Info.plist */,
-				ED122BF4181057BD00A70384 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		ED122BCE181057BC00A70384 /* FBGraphAPISample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED122BFB181057BD00A70384 /* Build configuration list for PBXNativeTarget "FBGraphAPISample" */;
-			buildPhases = (
-				ED122BCB181057BC00A70384 /* Sources */,
-				ED122BCC181057BC00A70384 /* Frameworks */,
-				ED122BCD181057BC00A70384 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FBGraphAPISample;
-			productName = FBGraphAPISample;
-			productReference = ED122BCF181057BC00A70384 /* FBGraphAPISample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		ED122BE9181057BD00A70384 /* FBGraphAPISampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED122BFE181057BD00A70384 /* Build configuration list for PBXNativeTarget "FBGraphAPISampleTests" */;
-			buildPhases = (
-				ED122BE6181057BD00A70384 /* Sources */,
-				ED122BE7181057BD00A70384 /* Frameworks */,
-				ED122BE8181057BD00A70384 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ED122BF0181057BD00A70384 /* PBXTargetDependency */,
-			);
-			name = FBGraphAPISampleTests;
-			productName = FBGraphAPISampleTests;
-			productReference = ED122BEA181057BD00A70384 /* FBGraphAPISampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		ED122BC7181057BC00A70384 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Facebook Inc";
-				TargetAttributes = {
-					ED122BE9181057BD00A70384 = {
-						TestTargetID = ED122BCE181057BC00A70384;
-					};
-				};
-			};
-			buildConfigurationList = ED122BCA181057BC00A70384 /* Build configuration list for PBXProject "FBGraphAPISample" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = ED122BC6181057BC00A70384;
-			productRefGroup = ED122BD0181057BC00A70384 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				ED122BCE181057BC00A70384 /* FBGraphAPISample */,
-				ED122BE9181057BD00A70384 /* FBGraphAPISampleTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		ED122BCD181057BC00A70384 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED122BDD181057BD00A70384 /* InfoPlist.strings in Resources */,
-				ED122BE5181057BD00A70384 /* Images.xcassets in Resources */,
-				ED122C051810589E00A70384 /* GraphAPICallsViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED122BE8181057BD00A70384 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED122BF6181057BD00A70384 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		ED122BCB181057BC00A70384 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED122BE3181057BD00A70384 /* AppDelegate.m in Sources */,
-				ED122BDF181057BD00A70384 /* main.m in Sources */,
-				ED122C041810589E00A70384 /* GraphAPICallsViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED122BE6181057BD00A70384 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED122BF8181057BD00A70384 /* FBGraphAPISampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ED122BF0181057BD00A70384 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ED122BCE181057BC00A70384 /* FBGraphAPISample */;
-			targetProxy = ED122BEF181057BD00A70384 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		ED122BDB181057BD00A70384 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED122BDC181057BD00A70384 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		ED122BF4181057BD00A70384 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED122BF5181057BD00A70384 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		ED122BF9181057BD00A70384 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		ED122BFA181057BD00A70384 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		ED122BFC181057BD00A70384 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/..",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBGraphAPISample/FBGraphAPISample-Prefix.pch";
-				INFOPLIST_FILE = "FBGraphAPISample/FBGraphAPISample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		ED122BFD181057BD00A70384 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/..",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBGraphAPISample/FBGraphAPISample-Prefix.pch";
-				INFOPLIST_FILE = "FBGraphAPISample/FBGraphAPISample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		ED122BFF181057BD00A70384 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBGraphAPISample.app/FBGraphAPISample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBGraphAPISample/FBGraphAPISample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FBGraphAPISampleTests/FBGraphAPISampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		ED122C00181057BD00A70384 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBGraphAPISample.app/FBGraphAPISample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBGraphAPISample/FBGraphAPISample-Prefix.pch";
-				INFOPLIST_FILE = "FBGraphAPISampleTests/FBGraphAPISampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		ED122BCA181057BC00A70384 /* Build configuration list for PBXProject "FBGraphAPISample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED122BF9181057BD00A70384 /* Debug */,
-				ED122BFA181057BD00A70384 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED122BFB181057BD00A70384 /* Build configuration list for PBXNativeTarget "FBGraphAPISample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED122BFC181057BD00A70384 /* Debug */,
-				ED122BFD181057BD00A70384 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		ED122BFE181057BD00A70384 /* Build configuration list for PBXNativeTarget "FBGraphAPISampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED122BFF181057BD00A70384 /* Debug */,
-				ED122C00181057BD00A70384 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = ED122BC7181057BC00A70384 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0ECABE6105221AE829DD38E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4F800DD897C42965F853C6E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>16A27979512E3A839AF36A10</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DC365AFD26FE58B44BA79200</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>22E2928CDBB4791E65A5BF8F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7420523E28C038306F0CB5C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2526733D5341F6D5D2D4211D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3D1DBA94C26B29B1DDE0302</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4F800DD897C42965F853C6E9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>59011138145196FC80B4A82A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreTelephony.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreTelephony.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>64729410DE51A66A76157C1D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>95213050E0DEEDD40C4442A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>86158BC99E6D427705B32953</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FE65E42EBD770AD037BC702B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9075E7E3B54A116F122BBDA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>59011138145196FC80B4A82A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>95213050E0DEEDD40C4442A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>BuddyBuildSDK.framework</string>
+			<key>path</key>
+			<string>BuddyBuildSDK.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7420523E28C038306F0CB5C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreVideo.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreVideo.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>AA9AC7B0A51981656416D6D8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreText.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreText.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B52D00429BA520145D8E8132</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AA9AC7B0A51981656416D6D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B9B009B539A9189A59977BF2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E3708A939A64B4BEF91C1BD7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DC365AFD26FE58B44BA79200</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreMedia.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreMedia.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E3708A939A64B4BEF91C1BD7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>ED122BC6181057BC00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BD8181057BD00A70384</string>
+				<string>ED122BF1181057BD00A70384</string>
+				<string>ED122BD1181057BC00A70384</string>
+				<string>ED122BD0181057BC00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BC7181057BC00A70384</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Facebook Inc</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>ED122BE9181057BD00A70384</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>ED122BCE181057BC00A70384</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>ED122BCA181057BC00A70384</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>ED122BC6181057BC00A70384</string>
+			<key>productRefGroup</key>
+			<string>ED122BD0181057BC00A70384</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>ED122BCE181057BC00A70384</string>
+				<string>ED122BE9181057BD00A70384</string>
+			</array>
+		</dict>
+		<key>ED122BCA181057BC00A70384</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>ED122BF9181057BD00A70384</string>
+				<string>ED122BFA181057BD00A70384</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>ED122BCB181057BC00A70384</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ED122BE3181057BD00A70384</string>
+				<string>ED122BDF181057BD00A70384</string>
+				<string>ED122C041810589E00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ED122BCC181057BC00A70384</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ED122BD5181057BD00A70384</string>
+				<string>ED122C0718105C0B00A70384</string>
+				<string>ED122BD7181057BD00A70384</string>
+				<string>ED122BD3181057BD00A70384</string>
+				<string>64729410DE51A66A76157C1D</string>
+				<string>2526733D5341F6D5D2D4211D</string>
+				<string>B52D00429BA520145D8E8132</string>
+				<string>9075E7E3B54A116F122BBDA4</string>
+				<string>B9B009B539A9189A59977BF2</string>
+				<string>0ECABE6105221AE829DD38E4</string>
+				<string>86158BC99E6D427705B32953</string>
+				<string>16A27979512E3A839AF36A10</string>
+				<string>22E2928CDBB4791E65A5BF8F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ED122BCD181057BC00A70384</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ED122BDD181057BD00A70384</string>
+				<string>ED122BE5181057BD00A70384</string>
+				<string>ED122C051810589E00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ED122BCE181057BC00A70384</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>ED122BFB181057BD00A70384</string>
+			<key>buildPhases</key>
+			<array>
+				<string>ED122BCB181057BC00A70384</string>
+				<string>ED122BCC181057BC00A70384</string>
+				<string>ED122BCD181057BC00A70384</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FBGraphAPISample</string>
+			<key>productName</key>
+			<string>FBGraphAPISample</string>
+			<key>productReference</key>
+			<string>ED122BCF181057BC00A70384</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>ED122BCF181057BC00A70384</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FBGraphAPISample.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>ED122BD0181057BC00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BCF181057BC00A70384</string>
+				<string>ED122BEA181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BD1181057BC00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122C0618105C0B00A70384</string>
+				<string>ED122BD2181057BD00A70384</string>
+				<string>ED122BD4181057BD00A70384</string>
+				<string>ED122BD6181057BD00A70384</string>
+				<string>ED122BEB181057BD00A70384</string>
+				<string>95213050E0DEEDD40C4442A5</string>
+				<string>F3D1DBA94C26B29B1DDE0302</string>
+				<string>AA9AC7B0A51981656416D6D8</string>
+				<string>59011138145196FC80B4A82A</string>
+				<string>E3708A939A64B4BEF91C1BD7</string>
+				<string>4F800DD897C42965F853C6E9</string>
+				<string>FE65E42EBD770AD037BC702B</string>
+				<string>DC365AFD26FE58B44BA79200</string>
+				<string>A7420523E28C038306F0CB5C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BD2181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>ED122BD3181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BD2181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BD4181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>ED122BD5181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BD4181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BD6181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>ED122BD7181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BD6181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BD8181057BD00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BE1181057BD00A70384</string>
+				<string>ED122BE2181057BD00A70384</string>
+				<string>ED122C011810589E00A70384</string>
+				<string>ED122C021810589E00A70384</string>
+				<string>ED122C031810589E00A70384</string>
+				<string>ED122BE4181057BD00A70384</string>
+				<string>ED122BD9181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FBGraphAPISample</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BD9181057BD00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BDA181057BD00A70384</string>
+				<string>ED122BDB181057BD00A70384</string>
+				<string>ED122BDE181057BD00A70384</string>
+				<string>ED122BE0181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BDA181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FBGraphAPISample-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BDB181057BD00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BDC181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BDC181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BDD181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BDB181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BDE181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BDF181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BDE181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BE0181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FBGraphAPISample-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BE1181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BE2181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BE3181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BE2181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BE4181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BE5181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BE4181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BE6181057BD00A70384</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ED122BF8181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ED122BE7181057BD00A70384</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ED122BEC181057BD00A70384</string>
+				<string>ED122BEE181057BD00A70384</string>
+				<string>ED122BED181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ED122BE8181057BD00A70384</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ED122BF6181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ED122BE9181057BD00A70384</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>ED122BFE181057BD00A70384</string>
+			<key>buildPhases</key>
+			<array>
+				<string>ED122BE6181057BD00A70384</string>
+				<string>ED122BE7181057BD00A70384</string>
+				<string>ED122BE8181057BD00A70384</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>ED122BF0181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FBGraphAPISampleTests</string>
+			<key>productName</key>
+			<string>FBGraphAPISampleTests</string>
+			<key>productReference</key>
+			<string>ED122BEA181057BD00A70384</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>ED122BEA181057BD00A70384</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FBGraphAPISampleTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>ED122BEB181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>ED122BEC181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BEB181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BED181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BD2181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BEE181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BD6181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BEF181057BD00A70384</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>ED122BC7181057BC00A70384</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>ED122BCE181057BC00A70384</string>
+			<key>remoteInfo</key>
+			<string>FBGraphAPISample</string>
+		</dict>
+		<key>ED122BF0181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>ED122BCE181057BC00A70384</string>
+			<key>targetProxy</key>
+			<string>ED122BEF181057BD00A70384</string>
+		</dict>
+		<key>ED122BF1181057BD00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BF7181057BD00A70384</string>
+				<string>ED122BF2181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FBGraphAPISampleTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BF2181057BD00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BF3181057BD00A70384</string>
+				<string>ED122BF4181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BF3181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FBGraphAPISampleTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BF4181057BD00A70384</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ED122BF5181057BD00A70384</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BF5181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BF6181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BF4181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BF7181057BD00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FBGraphAPISampleTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122BF8181057BD00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122BF7181057BD00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122BF9181057BD00A70384</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ED122BFA181057BD00A70384</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>ED122BFB181057BD00A70384</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>ED122BFC181057BD00A70384</string>
+				<string>ED122BFD181057BD00A70384</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>ED122BFC181057BD00A70384</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(SRCROOT)/..</string>
+					<string>$(PROJECT_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBGraphAPISample/FBGraphAPISample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FBGraphAPISample/FBGraphAPISample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ED122BFD181057BD00A70384</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(SRCROOT)/..</string>
+					<string>$(PROJECT_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBGraphAPISample/FBGraphAPISample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FBGraphAPISample/FBGraphAPISample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>ED122BFE181057BD00A70384</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>ED122BFF181057BD00A70384</string>
+				<string>ED122C00181057BD00A70384</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>ED122BFF181057BD00A70384</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FBGraphAPISample.app/FBGraphAPISample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBGraphAPISample/FBGraphAPISample-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FBGraphAPISampleTests/FBGraphAPISampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ED122C00181057BD00A70384</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FBGraphAPISample.app/FBGraphAPISample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBGraphAPISample/FBGraphAPISample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FBGraphAPISampleTests/FBGraphAPISampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>ED122C011810589E00A70384</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GraphAPICallsViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122C021810589E00A70384</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GraphAPICallsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122C031810589E00A70384</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>GraphAPICallsViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122C041810589E00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122C021810589E00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122C051810589E00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122C031810589E00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ED122C0618105C0B00A70384</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FacebookSDK.framework</string>
+			<key>path</key>
+			<string>../FacebookSDK.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED122C0718105C0B00A70384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED122C0618105C0B00A70384</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3D1DBA94C26B29B1DDE0302</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AssetsLibrary.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AssetsLibrary.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>FE65E42EBD770AD037BC702B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AVFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AVFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>ED122BC7181057BC00A70384</string>
+</dict>
+</plist>
